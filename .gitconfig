@@ -1,6 +1,6 @@
 [user]
 	email = yannis.h@hotmail.ch
 	name = Yannis Huber
-	signingkey = 0xFD571C4599331E94
+	signingkey = FD571C4599331E94
 [gpg]
 	program = gpg2
