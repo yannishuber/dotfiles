@@ -41,3 +41,4 @@ if ! zplug check --verbose; then
 fi
 
 zplug load
+export EDITOR=/usr/bin/vim
