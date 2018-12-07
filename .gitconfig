@@ -4,3 +4,5 @@
 	signingkey = FD571C4599331E94
 [gpg]
 	program = gpg2
+[core]
+	autocrlf = input
