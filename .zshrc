@@ -20,17 +20,7 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.zplug/init.zsh
 
-
-#zplug "zsh-users/zsh-history-substring-search"
-
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-
-#zplug "junegunn/fzf-bin", \
-#      from:gh-r, \
-#      as:command, \
-#      at:0.16.5, \
-#      use:"*darwin*amd64*", \
-#      rename-to: fzf
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -46,8 +36,11 @@ export EDITOR=/usr/bin/vim
 # added by travis gem
 [ -f /home/yannis/.travis/travis.sh ] && source /home/yannis/.travis/travis.sh
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH=$PATH:/usr/local/go/bin
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/yannis/.sdkman"
 [[ -s "/home/yannis/.sdkman/bin/sdkman-init.sh" ]] && source "/home/yannis/.sdkman/bin/sdkman-init.sh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
