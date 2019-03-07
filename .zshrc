@@ -40,6 +40,10 @@ export EDITOR=/usr/bin/vim
 
 export PATH=$PATH:/usr/local/go/bin
 
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/yannis/.sdkman"
 [[ -s "/home/yannis/.sdkman/bin/sdkman-init.sh" ]] && source "/home/yannis/.sdkman/bin/sdkman-init.sh"
