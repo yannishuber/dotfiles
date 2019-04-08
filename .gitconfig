@@ -5,6 +5,7 @@
 	a = add
 	c = commit -am
 	b = branch
+        l = log --oneline --graph --decorate
 
 	ra = remote add
 	po = push origin
@@ -17,3 +18,5 @@
 	signingkey = FD571C4599331E94
 [gpg]
 	program = gpg2
+[merge]
+	tool = meld

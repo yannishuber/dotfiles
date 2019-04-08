@@ -3,7 +3,7 @@ alias tb="clear; tb"
 
 # USED FOR THE EMBEDDED SYSTEMS LECTURE
 export LMIBASE=/home/yannis/workspace/se12/tp
-export PATH="$PATH:/opt/gnu-mcu-eclipse/arm-none-eabi-gcc/7.3.1-1.1-20180724-0637/bin:/home/yannis/flutter/bin"
+export PATH="/opt/gnu-mcu-eclipse/arm-none-eabi-gcc/7.3.1-1.1-20180724-0637/bin:/home/yannis/flutter/bin:$PATH"
 
 # FIX CURSOR IN SNAP APPS
 export XCURSOR_PATH=$RUNTIME/usr/share/icons
