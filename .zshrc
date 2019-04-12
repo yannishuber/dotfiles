@@ -1,6 +1,8 @@
 # Clear screen before showing taskbook
 alias tb="clear; tb"
 
+alias c="clear"
+
 # USED FOR THE EMBEDDED SYSTEMS LECTURE
 export LMIBASE=/home/yannis/workspace/se12/tp
 export PATH="/opt/gnu-mcu-eclipse/arm-none-eabi-gcc/7.3.1-1.1-20180724-0637/bin:/home/yannis/flutter/bin:$PATH"
@@ -48,3 +50,4 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export SDKMAN_DIR="/home/yannis/.sdkman"
 [[ -s "/home/yannis/.sdkman/bin/sdkman-init.sh" ]] && source "/home/yannis/.sdkman/bin/sdkman-init.sh"
 
+export TERM=xterm-256color
