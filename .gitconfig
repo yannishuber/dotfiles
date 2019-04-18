@@ -3,15 +3,19 @@
 	s = status
 	p = push
 	a = add
-	c = commit -am
+	c = commit
 	b = branch
-        l = log --oneline --graph --decorate
+  l = log --oneline --graph --decorate
 
 	ra = remote add
 	po = push origin
 	co = checkout
+  cb = checkout -b
 	
-        pom = push origin master
+  pom = push origin master
+  poh = push origin HEAD
+
+  cam = commit -am
 [user]
 	email = yannis.h@hotmail.ch
 	name = Yannis Huber
