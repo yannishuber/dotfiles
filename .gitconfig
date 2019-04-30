@@ -21,6 +21,6 @@
 	name = Yannis Huber
 	signingkey = FD571C4599331E94
 [gpg]
-	program = gpg2
+	program = gpg
 [merge]
 	tool = meld
