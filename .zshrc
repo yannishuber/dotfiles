@@ -44,9 +44,8 @@ zplug load
 
 export EDITOR=/usr/bin/vim
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export TERM=xterm-256color
 
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  tmux attach || exec tmux new-session
-fi
+#if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#  tmux attach || exec tmux new-session
+#fi
 

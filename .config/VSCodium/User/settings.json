@@ -21,8 +21,11 @@
     "*.fdb_latexmk",
     "*.synctex.gz",
     "_minted-*",
+    "*.pygtex",
+    "*.pygstyle",
     "*.listing"
   ],
+  "latex-workshop.latex.clean.subfolder.enabled": true,
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
@@ -68,6 +71,7 @@
   "editor.fontFamily": "'Fira Code Retina','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontSize": 15,
   "editor.rulers": [80],
+  "editor.minimap.renderCharacters": false,
   "workbench.colorTheme": "Min Light",
   "cSpell.language": "en,fr-FR",
   "cSpell.enabledLanguageIds": [
