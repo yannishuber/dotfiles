@@ -112,11 +112,11 @@
     "editor.rulers": [
       80
     ]
-  },
-  "C_Cpp.clang_format_style": "{ColumnLimit: 80, IndentWidth: 4, BreakBeforeBraces: Linux}",
+},
   "C_Cpp.updateChannel": "Insiders",
 "editor.detectIndentation": false,
 "telemetry.enableTelemetry": false,
-"gitlens.advanced.telemetry.enabled": false
-  
+"gitlens.advanced.telemetry.enabled": false,
+"C_Cpp.clang_format_fallbackStyle": "{ColumnLimit: 80, IndentWidth: 4, BreakBeforeBraces: Linux}",
+"C_Cpp.clang_format_path": "/usr/bin/clang-format"
 }

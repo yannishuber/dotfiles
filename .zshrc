@@ -9,7 +9,7 @@ export PATH="/opt/gnu-mcu-eclipse/arm-none-eabi-gcc/7.3.1-1.1-20180724-0637/bin:
 #export PATH="/home/yannis/flutter/bin:$PATH"
 
 # FIX CURSOR IN SNAP APPS
-export XCURSOR_PATH=$RUNTIME/usr/share/icons
+export XCURSOR_PATH=$RUNTIME/usr/share/icons/
 
 export ZSH="/home/yannis/.oh-my-zsh"
 
