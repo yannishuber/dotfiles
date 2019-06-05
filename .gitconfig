@@ -5,18 +5,24 @@
 	a = add
 	c = commit
 	b = branch
-  l = log --oneline --graph --decorate
+  lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an (%G?)%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+  lg3 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
+  l = !"git lg1"
 
 	ra = remote add
 	po = push origin
 	co = checkout
   cb = checkout -b
+  cs = commit -S
 	
   pom = push origin master
   poh = push origin HEAD
   plr = pull --rebase
 
   cam = commit -am
+  cams = commit -a -S -m
+	ignore = "!gi() { IFS=\",\"; curl -L -s \"https://www.gitignore.io/api/$*\" ;}; gi"
 [user]
 	email = yannis.h@hotmail.ch
 	name = Yannis Huber
@@ -24,4 +30,4 @@
 [gpg]
 	program = gpg
 [merge]
-	tool = meld
+	tool = vimdiff

@@ -118,5 +118,8 @@
 "telemetry.enableTelemetry": false,
 "gitlens.advanced.telemetry.enabled": false,
 "C_Cpp.clang_format_fallbackStyle": "{ColumnLimit: 80, IndentWidth: 4, BreakBeforeBraces: Linux}",
-"C_Cpp.clang_format_path": "/usr/bin/clang-format"
+"C_Cpp.clang_format_path": "/usr/bin/clang-format",
+"C_Cpp.default.cStandard": "c11",
+"C_Cpp.default.intelliSenseMode": "gcc-x64",
+"cortex-debug.enableTelemetry": false
 }

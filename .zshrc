@@ -17,6 +17,7 @@ ZSH_THEME="spaceship"
 
 plugins=(
   git
+  sudo
 )
 
 source $ZSH/oh-my-zsh.sh
