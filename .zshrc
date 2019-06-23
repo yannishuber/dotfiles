@@ -6,7 +6,9 @@ export LMIBASE=/home/yannis/workspace/se12/tp
 export PATH="/opt/gnu-mcu-eclipse/arm-none-eabi-gcc/7.3.1-1.1-20180724-0637/bin:$PATH"
 
 # Update path for flutter
-#export PATH="/home/yannis/flutter/bin:$PATH"
+export PATH="/home/yannis/flutter/bin:$PATH"
+
+export PATH=$PATH:/usr/local/go/bin
 
 # FIX CURSOR IN SNAP APPS
 export XCURSOR_PATH=$RUNTIME/usr/share/icons/
@@ -44,8 +46,8 @@ zplug load
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export EDITOR=/usr/bin/vim
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 #if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 #  tmux attach || exec tmux new-session
 #fi

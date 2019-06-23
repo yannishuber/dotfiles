@@ -23,7 +23,9 @@
     "_minted-*",
     "*.pygtex",
     "*.pygstyle",
-    "*.listing"
+    "*.listing",
+    "*.bcf",
+    "*.run.xml"
   ],
   "latex-workshop.latex.clean.subfolder.enabled": true,
   "latex-workshop.latex.tools": [
@@ -51,8 +53,8 @@
       ]
     },
     {
-      "name": "bibtex",
-      "command": "bibtex",
+      "name": "biber",
+      "command": "biber",
       "args": [
         "%DOCFILE%"
       ]
@@ -66,8 +68,7 @@
   "latex-workshop.chktex.enabled": true,
   "window.menuBarVisibility": "toggle",
   "workbench.tips.enabled": false,
-  "telemetry.enableCrashReporter": false,
-  "latex-workshop.latex.autoClean.run": "onBuilt",
+"telemetry.enableCrashReporter": false,
   "editor.fontFamily": "'Fira Code Retina','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontSize": 15,
   "editor.rulers": [80],
@@ -121,5 +122,8 @@
 "C_Cpp.clang_format_path": "/usr/bin/clang-format",
 "C_Cpp.default.cStandard": "c11",
 "C_Cpp.default.intelliSenseMode": "gcc-x64",
-"cortex-debug.enableTelemetry": false
+"cortex-debug.enableTelemetry": false,
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"latex-workshop.latex.autoBuild.run": "never"
 }
