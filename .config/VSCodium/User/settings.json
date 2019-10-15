@@ -71,9 +71,9 @@
 "telemetry.enableCrashReporter": false,
   "editor.fontFamily": "'Fira Code Retina','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontSize": 15,
-  "editor.rulers": [80],
+  "editor.rulers": [120],
   "editor.minimap.renderCharacters": false,
-  "workbench.colorTheme": "Min Light",
+  "workbench.colorTheme": "Min Dark",
   "cSpell.language": "en,fr-FR",
   "cSpell.enabledLanguageIds": [
     "asciidoc",
@@ -125,5 +125,16 @@
 "cortex-debug.enableTelemetry": false,
 "editor.suggestSelection": "first",
 "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-"latex-workshop.latex.autoBuild.run": "never"
+"latex-workshop.latex.autoBuild.run": "never",
+"[html]": {
+    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+},
+"[javascript]": {
+    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+},
+"[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+"prolog.dialect": "ecl",
+"prolog.executablePath": "/usr/local/bin/gprolog"
 }
