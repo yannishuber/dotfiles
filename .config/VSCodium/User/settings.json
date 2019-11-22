@@ -1,109 +1,16 @@
 {
-  "latex-workshop.latex.clean.fileTypes": [
-    "*.aux",
-    "*.bbl",
-    "*.blg",
-    "*.idx",
-    "*.ind",
-    "*.lof",
-    "*.lot",
-    "*.out",
-    "*.toc",
-    "*.acn",
-    "*.acr",
-    "*.alg",
-    "*.glg",
-    "*.glo",
-    "*.gls",
-    "*.ist",
-    "*.fls",
-    "*.log",
-    "*.fdb_latexmk",
-    "*.synctex.gz",
-    "_minted-*",
-    "*.pygtex",
-    "*.pygstyle",
-    "*.listing",
-    "*.bcf",
-    "*.run.xml"
-  ],
-  "latex-workshop.latex.clean.subfolder.enabled": true,
-  "latex-workshop.latex.tools": [
-    {
-      "name": "latexmk",
-      "command": "latexmk",
-      "args": [
-        "-synctex=1",
-        "-shell-escape",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-pdf",
-        "%DOC%"
-      ]
-    },
-    {
-      "name": "pdflatex",
-      "command": "pdflatex",
-      "args": [
-        "-synctex=1",
-        "-shell-escape",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOC%"
-      ]
-    },
-    {
-      "name": "biber",
-      "command": "biber",
-      "args": [
-        "%DOCFILE%"
-      ]
-    }
-  ],
-  "latex-workshop.view.pdf.viewer": "tab",
   "workbench.startupEditor": "newUntitledFile",
   "editor.fontLigatures": true,
   "terminal.integrated.rendererType": "dom",
-  "workbench.statusBar.feedback.visible": false,
-  "latex-workshop.chktex.enabled": true,
   "window.menuBarVisibility": "toggle",
   "workbench.tips.enabled": false,
-"telemetry.enableCrashReporter": false,
+  "telemetry.enableCrashReporter": false,
   "editor.fontFamily": "'Fira Code Retina','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontSize": 15,
-  "editor.rulers": [120],
-  "editor.minimap.renderCharacters": false,
-  "workbench.colorTheme": "Min Dark",
-  "cSpell.language": "en,fr-FR",
-  "cSpell.enabledLanguageIds": [
-    "asciidoc",
-    "c",
-    "cpp",
-    "csharp",
-    "css",
-    "go",
-    "handlebars",
-    "html",
-    "jade",
-    "javascript",
-    "javascriptreact",
-    "json",
-    "latex",
-    "less",
-    "markdown",
-    "php",
-    "plaintext",
-    "pub",
-    "python",
-    "restructuredtext",
-    "rust",
-    "scss",
-    "text",
-    "typescript",
-    "typescriptreact",
-    "yml"
+  "editor.rulers": [
+    120
   ],
-  
+  "editor.minimap.renderCharacters": false,
   "[c]": {
     "editor.rulers": [
       80
@@ -113,28 +20,50 @@
     "editor.rulers": [
       80
     ]
-},
-  "C_Cpp.updateChannel": "Insiders",
-"editor.detectIndentation": false,
-"telemetry.enableTelemetry": false,
-"gitlens.advanced.telemetry.enabled": false,
-"C_Cpp.clang_format_fallbackStyle": "{ColumnLimit: 80, IndentWidth: 4, BreakBeforeBraces: Linux}",
-"C_Cpp.clang_format_path": "/usr/bin/clang-format",
-"C_Cpp.default.cStandard": "c11",
-"C_Cpp.default.intelliSenseMode": "gcc-x64",
-"cortex-debug.enableTelemetry": false,
-"editor.suggestSelection": "first",
-"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-"latex-workshop.latex.autoBuild.run": "never",
-"[html]": {
-    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
-},
-"[javascript]": {
-    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
-},
-"[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-},
-"prolog.dialect": "ecl",
-"prolog.executablePath": "/usr/local/bin/gprolog"
+  },
+  "telemetry.enableTelemetry": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "prolog.executablePath": "/usr/local/bin/gprolog",
+  "todo-tree.highlights.enabled": true,
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".vue"
+    ]
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.formatOnSave": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Bold",
+  "eslint.packageManager": "yarn",
+  "prettier.disableLanguages": [],
+  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
 }

@@ -21,6 +21,7 @@
   ploh = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
   plr = pull --rebase
   plroh = "!git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"
+  suburr = submodule update --remote --rebase
 
   cam = commit -am
   cams = commit -a -S -m
@@ -33,3 +34,5 @@
 	program = gpg
 [merge]
 	tool = vimdiff
+[diff]
+	submodule = log
