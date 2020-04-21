@@ -21,6 +21,12 @@
       80
     ]
   },
+  "[latex]": {
+    "editor.wordWrap": "on",
+"editor.rulers": [
+      100
+    ]
+},
   "telemetry.enableTelemetry": false,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -66,4 +72,65 @@
     "editor.defaultFormatter": "octref.vetur"
   },
   "diffEditor.ignoreTrimWhitespace": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "python.jediEnabled": false,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "go.formatTool": "goimports",
+  "latex-workshop.latex.autoBuild.run": "never",
+  "todo-tree.tree.showScanModeButton": false,
+  "window.zoomLevel": 0,
+  "latex-workshop.chktex.enabled": true,
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "go.useLanguageServer": true,
+  "latex-workshop.latex.tools": [
+    {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+            "--shell-escape", // added arg to default
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "%DOC%"
+        ]
+    },
+    {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+            "--shell-escape", // added arg to default
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+        ]
+    },
+    {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+            "%DOCFILE%"
+        ]
+    }
+],
+  "latex-workshop.latex.magic.args": [
+    "-synctex=1",
+    "-interaction=nonstopmode",
+    "-file-line-error",
+    "-shell-escape",
+    "%DOC%",
+  ],
 }
