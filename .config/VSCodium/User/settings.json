@@ -87,13 +87,12 @@
   },
   "python.jediEnabled": false,
   "latex-workshop.view.pdf.viewer": "tab",
-  "go.formatTool": "goimports",
+  "go.formatTool": "gofmt",
   "latex-workshop.latex.autoBuild.run": "never",
   "todo-tree.tree.showScanModeButton": false,
   "window.zoomLevel": 0,
   "latex-workshop.chktex.enabled": true,
   "latex-workshop.latex.clean.subfolder.enabled": true,
-  "go.useLanguageServer": true,
   "latex-workshop.latex.tools": [
     {
         "name": "latexmk",
@@ -133,4 +132,9 @@
     "-shell-escape",
     "%DOC%",
   ],
+  "go.buildOnSave": "off",
+  "go.buildTags": "hifive1b fe310 riscv riscv32",
+  "go.lintOnSave": "file",
+  "go.trace.server": "messages",
+  "go.useLanguageServer": true,
 }
