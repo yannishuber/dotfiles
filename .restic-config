@@ -1,0 +1,9 @@
+export OS_AUTH_URL=https://swiss-backup02.infomaniak.com/identity/v3
+export OS_USER_DOMAIN_NAME=default
+export OS_PASSWORD=$(security find-generic-password -s restic-backup-os-password -w)
+export OS_USERNAME=$(security find-generic-password -s restic-backup-os-username -w)
+export OS_PROJECT_DOMAIN_NAME=default
+export OS_PROJECT_NAME=$(security find-generic-password -s restic-backup-os-project-name -w)
+
+export RESTIC_PASSWORD_COMMAND='security find-generic-password -s restic-backup-repository-backup -w'
+export RESTIC_REPOSITORY=swift:infomaniak:/

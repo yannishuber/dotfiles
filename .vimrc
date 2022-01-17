@@ -1,4 +1,3 @@
-set clipboard=unnamedplus
 set expandtab
 set softtabstop=2
 set tabstop=2
@@ -9,5 +8,7 @@ syntax on
 set autoindent
 set showmatch
 set hlsearch
-map <F7> :tabp<CR>
-map <F8> :tabn<CR>
+
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
