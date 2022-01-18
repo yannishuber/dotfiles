@@ -5,5 +5,5 @@ export OS_USERNAME=$(security find-generic-password -s restic-backup-os-username
 export OS_PROJECT_DOMAIN_NAME=default
 export OS_PROJECT_NAME=$(security find-generic-password -s restic-backup-os-project-name -w)
 
-export RESTIC_PASSWORD_COMMAND='security find-generic-password -s restic-backup-repository-backup -w'
+export RESTIC_PASSWORD_COMMAND='security find-generic-password -s restic-backup-repository-password -w'
 export RESTIC_REPOSITORY=swift:infomaniak:/
