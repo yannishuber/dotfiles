@@ -11,4 +11,4 @@ set hlsearch
 
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
-
+inoremap <C-d> <Del>
